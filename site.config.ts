@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Jörmungandr‘s blog',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
+  domain: 'jormungandr-blog.vercel.app',
   author: 'Jörmungandr',
 
   // social usernames (optional)
