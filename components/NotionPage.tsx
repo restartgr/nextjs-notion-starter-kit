@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-
+import { Analytics } from '@vercel/analytics/react'
 import cs from 'classnames'
 import { PageBlock } from 'notion-types'
 import { formatDate, getBlockTitle, getPageProperty } from 'notion-utils'
@@ -244,6 +244,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   return (
     <>
+      <Analytics />
       <PageHead
         pageId={pageId}
         site={site}
